@@ -1,6 +1,6 @@
 <style scoped>
 .wrapper{
-	@apply fixed top-0 left-0 right-0;
+	@apply fixed top-0 left-0 right-0 z-50;
 }
 
 .header-bar {

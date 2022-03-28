@@ -5,12 +5,12 @@ p {
 }
 
 h1 {
-	@apply text-lg font-medium block my-5;
+	@apply text-xl font-medium block my-5;
 }
 </style>
 
 <template>
-	<main class="w-full mx-auto bg-primary px-1 py-5 rounded-xl flex items-start justify-evenly">
+	<main class="w-full mx-auto bg-primary px-1 py-8 rounded-xl flex items-start justify-evenly">
 		<section>
 			<p>Saldo anda</p>
 			<h1>{{ balances.current.toLocaleString() }} IDR</h1>

@@ -1,7 +1,7 @@
 <style scoped>
 
 .wrapper {
-	@apply fixed bottom-0 left-0 right-0;
+	@apply z-50 fixed bottom-0 left-0 right-0;
 }
 
 .bottom-bar {

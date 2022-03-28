@@ -1,5 +1,5 @@
 <template>
-	<HeaderBar>
+	<HeaderBar class="z-20">
 		<template v-slot:start>
 			<div class="flex w-7/12 gap-3">
 				<span>
