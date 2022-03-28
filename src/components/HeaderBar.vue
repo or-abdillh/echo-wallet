@@ -4,7 +4,7 @@
 }
 
 .header-bar {
-	@apply flex items-center justify-between p-5;
+	@apply bg-drop flex items-center justify-between p-5;
 }
 </style>
 
