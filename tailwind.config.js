@@ -9,6 +9,9 @@ module.exports = {
         primary: '#F7F8FA',
         secondary: '#626365',
         drop: '#FFFFFF'
+      },
+      fontSize: {
+        'xxs': '.55rem'
       }
     },
   },
