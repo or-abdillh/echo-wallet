@@ -1,13 +1,22 @@
+<style scoped>
+img {
+  @apply w-full rounded-lg;
+}
+
+</style>
 <template>
   <Splide class="mt-3 z-10" :options="options">
     <SplideSlide>
-      <img src="/banner-promo.jpg" alt="Sample 1">
+      <img src="/banner-1.jpg" alt="Sample 1">
     </SplideSlide>
     <SplideSlide>
-      <img src="/banner-promo.jpg" alt="Sample 2">
+      <img src="/banner-2.jpg" alt="Sample 2">
     </SplideSlide>
     <SplideSlide>
-      <img src="/banner-promo.jpg" alt="Sample 2">
+      <img src="/banner-1.jpg" alt="Sample 1">
+    </SplideSlide>
+    <SplideSlide>
+      <img src="/banner-2.jpg" alt="Sample 2">
     </SplideSlide>
   </Splide>
 </template>

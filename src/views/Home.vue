@@ -14,7 +14,7 @@
 			<h1 class="title">Layanan</h1>
 			<Services />
 		</section>
-		<section class="mt-16">
+		<section class="mt-12">
 			<h1 class="title">Promo hari ini</h1>
 			<Promo />
 		</section>

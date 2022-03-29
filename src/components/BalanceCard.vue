@@ -1,11 +1,11 @@
 <style scoped>
 
 p {
-	@apply text-sm;
+	@apply text-lg;
 }
 
 h1 {
-	@apply text-xl font-medium block my-5;
+	@apply text-xl font-semibold block my-5;
 }
 </style>
 
@@ -14,10 +14,12 @@ h1 {
 		<section>
 			<p>Saldo anda</p>
 			<h1>{{ balances.current.toLocaleString() }} IDR</h1>
-			<span class="w-full flex justify-between gap-1">
+			<span class="w-full flex justify-between items-center">
 				<small>{{ balances.trend.value.toLocaleString() }} IDR</small>
-				<i class="fa fa-chevron-up ml-2"></i>
-				<small>{{ balances.trend.percent }}{{ balances.trend.prefix }}</small>
+				<span class="flex items-start gap-1">
+					<i class="fas fa-caret-up text-xl"></i>
+					<small>{{ balances.trend.percent }}{{ balances.trend.prefix }}</small>
+				</span>
 			</span>
 		</section>
 		<section>
