@@ -16,9 +16,9 @@ h1 {
 			<h1>{{ balances.current.toLocaleString() }} IDR</h1>
 			<span class="w-full flex justify-between items-center">
 				<small>{{ balances.trend.value.toLocaleString() }} IDR</small>
-				<span class="flex items-start gap-1">
-					<i class="fas fa-caret-up text-xl"></i>
-					<small>{{ balances.trend.percent }}{{ balances.trend.prefix }}</small>
+				<span class="flex items-end">
+					<i class="block fas fa-caret-up text-xl mr-1"></i>
+					<small class="mb-1 block">{{ balances.trend.percent }}{{ balances.trend.prefix }}</small>
 				</span>
 			</span>
 		</section>
