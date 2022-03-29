@@ -15,10 +15,10 @@
 		<section class="bottom-bar responsive-container">
 			<template v-for="nav in navigations" :key="nav.id">
 				<span
-					@click="currentNav = nav.id"
+					@click="menuAction(nav)"
 					class="flex flex-col items-center active:scale-95 duration-300">
 					<i :class="nav.icon" class="text-2xl"></i>
-					<i v-if="currentNav === nav.id" class="text-xxs fa fa-circle"></i>
+					<i v-if="routeName === nav.name" class="text-xxs fa fa-circle"></i>
 				</span>
 			</template>
 		</section>
@@ -27,21 +27,26 @@
 
 <script setup>
 
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
 
 const currentNav = ref(1)
+const router = useRouter()
+const route = useRoute()
+
+const routeName = computed(() => route.name)
 
 const navigations = [
 	{
 		name: 'Home',
 		id: 1,
-		to: 'home',
+		to: 'Home',
 		icon: 'fa fa-home'
 	},
 	{
-		name: 'Market',
+		name: 'Marketplace',
 		id: 2,
-		to: 'market',
+		to: 'Marketplace',
 		icon: 'fa fa-shopping-cart'
 	},
 	{
@@ -51,5 +56,9 @@ const navigations = [
 		icon: 'fa fa-user'
 	}
 ]
+
+const menuAction = nav => {
+	router.push({ name: nav.to })
+}
 
 </script>
