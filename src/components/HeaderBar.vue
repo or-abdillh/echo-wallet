@@ -4,7 +4,7 @@
 }
 
 .header-bar {
-	@apply bg-drop flex items-center justify-between p-5;
+	@apply bg-drop flex flex-wrap items-center justify-between p-5;
 }
 </style>
 
@@ -13,6 +13,7 @@
 		<section class="responsive-container header-bar">
 			<slot name="start"></slot>
 			<slot name="end"></slot>
+			<slot name="bottom"></slot>
 		</section>
 	</main>
 </template>

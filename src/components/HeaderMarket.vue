@@ -18,19 +18,30 @@
                 </span>
             </section>
         </template>
-    </HeaderBar>  
+        <template class="w-full" v-slot:bottom>
+            <section class="h-20 w-full flex justify-between items-center">
+                <template v-for="item in category" :key="item.id">
+                    <span :class="currentCategory === item.id ? 'bg-gray-600 text-gray-200 font-medium px-3 py-1 rounded-full' : ''" 
+                        @click="currentCategory = item.id"
+                        class="active:95 duration-300">{{ item.name }}</span>
+                 </template>
+            </section>
+        </template>
+    </HeaderBar> 
 </template>
 
 <script setup>
 
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import HeaderBar from '@/components/HeaderBar.vue'
 import { useHistory } from '@/stores/history'
-import backAction from '@/helper/backAction.js'
 import { useRouter } from 'vue-router'
+import category from '@/contents/category.js'
 
 const router = useRouter()
 const history = useHistory()
 const carts = computed(() => history.carts)
+
+const currentCategory = ref(1)
 
 </script>
