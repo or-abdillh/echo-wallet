@@ -17,6 +17,11 @@ const routes = [
 		path: '/market',
 		component: () => import('@/views/MarketPlace.vue')
 
+	},
+	{
+		name: 'Deposit',
+		path: '/deposit',
+		component: () => import('@/views/Deposit.vue')
 	}
 ]
 

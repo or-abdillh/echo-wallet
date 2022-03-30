@@ -11,7 +11,7 @@
 </style>
 
 <template>
-	<main class="wrapper">
+	<main v-if="isMainNav" class="wrapper">
 		<section class="bottom-bar responsive-container">
 			<template v-for="nav in navigations" :key="nav.id">
 				<span
@@ -35,6 +35,15 @@ const router = useRouter()
 const route = useRoute()
 
 const routeName = computed(() => route.name)
+
+const mainNavigations = [
+		'Home', 'Marketplace', 'Profile'
+]
+
+const isMainNav = computed(() => {
+	if ( mainNavigations.includes(routeName.value) ) return true
+	else return false
+})
 
 const navigations = [
 	{

@@ -13,7 +13,7 @@ import IconMenu from '@/components/IconMenu.vue'
 const services = [
 	{
 		name: 'Setor',
-		to: 'setor'
+		to: 'Deposit'
 	},
 	{
 		name: 'Kirim Uang',
