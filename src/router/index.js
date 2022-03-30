@@ -29,6 +29,11 @@ const routes = [
 		name: 'Deposit',
 		path: '/deposit',
 		component: () => import('@/views/Deposit.vue')
+	},
+	{
+		name: 'Notifications',
+		path: '/notifications',
+		component: () => import('@/views/Notifications.vue')
 	}
 ]
 

@@ -13,7 +13,7 @@
 		</template>
 		<template v-slot:end>
 			<div class="text-lg text-gray-300">
-				<span class="mr-5 relative">
+				<span class="mr-5 relative active:scale-95 duration-300" @click="navigate('Notifications')">
 					<span
 						style="width:20px; height:20px" 
 						class="bg-red-500 text-gray-300 grid place-items-center absolute left-1 -top-3 text-xs rounded-full">{{ amountNotif.length}}</span>
@@ -31,9 +31,17 @@ import { computed } from 'vue'
 import HeaderBar from '@/components/HeaderBar.vue'
 import { useUser } from '@/stores/user'
 import { useNotifications} from '@/stores/notifications'
+import { useRouter } from 'vue-router'
 
 const user = useUser()
+const router = useRouter()
 const notifications = useNotifications()
+
+const navigate = path => {
+	setTimeout(() => {
+		router.push({ name: path })
+	}, 300)
+}
 
 //Getter
 const fullname = computed(() => user.fullname)

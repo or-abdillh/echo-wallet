@@ -1,18 +1,25 @@
 <template>
 	<main class="app">
-		<router-view></router-view>
+		<router-view @back="backNavigate"></router-view>
 	</main>
 	<BottomBar v-if="routeName !== 'Login'" />
 </template>
 
 <script setup>
 
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import BottomBar from '@/components/BottomBar.vue'
 import { computed } from 'vue'
 
 const route = useRoute()
+const router = useRouter()
 const routeName = computed(() => route.name)
+
+const backNavigate = () => {
+	setTimeout(() => {
+		router.go(-1)
+	}, 300)
+}
 
 </script>
 
