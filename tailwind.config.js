@@ -6,9 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#F7F8FA',
-        secondary: '#626365',
-        drop: '#FFFFFF'
+        success: '#00CB92',
+        primary: '#121212',
+        secondary: '#1D1D1D',
+        darkness: '#141C10',
+        drop: '#F7F7F7'
       },
       fontSize: {
         'xxs': '.55rem'

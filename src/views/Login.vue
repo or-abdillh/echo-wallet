@@ -5,19 +5,18 @@
 }
 
 input {
-    @apply rounded-lg w-full bg-primary h-full px-3 focus:ring-2 active:ring-2 ring-secondary;
-    outline: none;
+    @apply text-gray-300 active:ring-1 focus:ring-1 ring-green-500 duration-300 rounded-lg w-full bg-secondary h-full px-3 focus:ring-2 active:ring-2 ring-secondary;
 }
 
 </style>
 
 <template>
     <main>
-        <section class="mt-16 text-center w-10/12 mx-auto">
+        <section class="mt-16 text-gray-300 text-center w-10/12 mx-auto">
             <h1 class="font-semibold text-lg">Echo Wallet</h1>
             <p class="text-sm">Maksimalkan sampah anda menjadi sebuah peluang</p>
         </section>
-
+            
         <section class="mt-10">
             <form @submit.prevent="login" action="">
                 <div class="input-wrapper">
@@ -25,12 +24,12 @@ input {
                 </div>
                 <div class="input-wrapper">
                     <input v-model="form.password" :type="showPassword ? 'text' : 'password'" placeholder="Password">
-                    <span @click="showPassword = !showPassword" class="bg-primary rounded-lg w-3/12 h-full grid place-items-center">
+                    <span @click="showPassword = !showPassword" class="bg-green-500 rounded-lg w-3/12 h-full grid place-items-center">
                         <i :class="showPassword ? 'fa-eye' : 'fa-eye-slash'" class="fa text-lg"></i>
                     </span>
                 </div>
                 <section>
-                    <button class="w-full bg-secondary text-gray-200 py-3 rounded-lg mt-6">
+                    <button class="w-full bg-green-500 font-semibold text-gray-800 py-3 rounded-lg mt-6">
                         <LoadAction :isLoad="isLoad" :isSuccess="isSuccess" :isFail="isFail" action="LOGIN" />
                     </button>
                     <small class="mt-3 block text-red-600 font-medium">{{ msgErr }}</small>
@@ -38,18 +37,18 @@ input {
             </form>
         </section>
 
-        <section class="mt-24">
+        <section class="mt-24 text-gray-300">
             <div class="flex gap-3">
-                <span class="bg-primary rounded-lg grid place-items-center w-2/12 p-1">
+                <span class="bg-secondary rounded-lg grid place-items-center w-2/12 p-1">
                     <i class="fas fa-lightbulb text-sm"></i>
                 </span>
                 <p class="text-sm w-10/12">
                     Belum punya akun ? Silahkan lakukan pendaftaran di Unit Bank Sampah terdekat
                 </p>
             </div>
-
+                
             <div class="flex gap-3 mt-5 h-10">
-                <span class="bg-primary rounded-lg grid place-items-center w-2/12 p-1">
+                <span class="bg-secondary rounded-lg grid place-items-center w-2/12 p-1">
                     <i class="fas fa-lightbulb text-sm"></i>
                 </span>
                 <p class="text-sm w-10/12">

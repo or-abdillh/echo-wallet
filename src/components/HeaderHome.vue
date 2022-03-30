@@ -5,14 +5,14 @@
 				<span>
 					<img src="/avatar.jpg" class="rounded-full" width="50" />
 				</span>
-				<div>
-					<p class="font-medium text-xl">{{ fullname }}</p>
+				<div class="text-gray-300">
+					<p class="font-semibold text-xl">{{ fullname }}</p>
 					<small class="font-medium">Hay, selamat pagi</small>
 				</div>
 			</div>
 		</template>
 		<template v-slot:end>
-			<div class="text-lg">
+			<div class="text-lg text-gray-300">
 				<span class="mr-5 relative">
 					<span
 						style="width:20px; height:20px" 

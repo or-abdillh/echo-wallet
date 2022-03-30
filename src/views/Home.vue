@@ -1,7 +1,7 @@
 <style scoped>
 
 .title {
-	@apply font-medium text-lg;
+	@apply font-semibold text-success text-lg;
 }
 
 </style>

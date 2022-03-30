@@ -1,18 +1,18 @@
 <style scoped>
 
 .input-wrapper {
-	@apply mb-8 flex flex-col h-20;
+	@apply flex flex-col h-20 text-gray-300;
 }
 
 input[type=text], select {
-	@apply bg-primary rounded-lg h-full mt-2 text-sm px-2 py-3;
+	@apply bg-secondary border border-gray-700 text-gray-300 rounded-lg h-full mt-2 text-sm px-2 py-3;
 }
 
 </style>
 <template>
 	<main>
 		<HeaderDeposit />
-		<section class="mt-20">
+		<section class="text-gray-300 mt-20">
 			<h1 class="text-lg font-medium">Formulir</h1>
 			<p class="text-xs">
 				<i class="fas fa-lightbulb mr-1"></i>
@@ -32,20 +32,23 @@ input[type=text], select {
 					<option>Jemput petugas</option>
 				</select>
 			</div>
-			<div class="input-wrapper w-full">
+			<div class="input-wrapper mt-8 mb-3 w-full">
 				<label>Pilih lokasi penjemputan</label>
 				<select>
 					<option>Unit Bank sampah</option>
 				</select>
-				<p class="text-xs mt-3">
-					<i class="fas fa-lightbulb mr-1"></i>
-					Hanya untuk metode pengantaran <strong>antar sendiri</strong>
-				</p>
 			</div>
+			<p class="text-xs text-gray-300">
+				<i class="fas fa-lightbulb mr-1"></i>
+				Hanya untuk metode pengantaran <strong>antar sendiri</strong>
+			</p>
 		</form>
-		<section class="mt-6">
-			<h1 class="font-medium text-lg">Kategori sampah</h1>
+		<section class="mt-12">
+			<h1 class="font-medium text-gray-300 text-lg">Kategori sampah</h1>
 			<TrashCategory />
+			<section class="w-full mt-10">
+				<button class="bg-green-600 text-gray-300 font-semibold px-3 py-2 w-full rounded-full">Setor</button>
+			</section>
 		</section>
 	</main>
 </template>

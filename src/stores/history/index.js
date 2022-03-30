@@ -7,17 +7,17 @@ export const useHistory = defineStore('history', {
 				{
 					title: 'Kardus',
 					description: '3kg Rp128.000,00,-',
-					thumbnail: '/trash.jpg'
+					thumbnail: '/kardus.png'
+				},
+				{
+					title: 'Plastik',
+					description: '1kg Rp45.000,00,-',
+					thumbnail: '/plastik.png'
 				},
 				{
 					title: 'Kardus',
 					description: '3kg Rp128.000,00,-',
-					thumbnail: '/trash.jpg'
-				},
-				{
-					title: 'Kardus',
-					description: '3kg Rp128.000,00,-',
-					thumbnail: '/trash.jpg'
+					thumbnail: '/kardus.png'
 				}
 			],
 			carts: [

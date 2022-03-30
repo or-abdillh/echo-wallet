@@ -5,7 +5,7 @@
 }
 
 .bottom-bar {
-	@apply bg-drop flex px-10 py-5 justify-between text-secondary; 
+	@apply bg-secondary flex px-10 py-4 justify-between text-secondary; 
 }
 
 </style>
@@ -16,9 +16,10 @@
 			<template v-for="nav in navigations" :key="nav.id">
 				<span
 					@click="menuAction(nav)"
+					:class="routeName === nav.name ? 'text-green-200' : 'text-gray-500 scale-95'"
 					class="flex flex-col items-center active:scale-95 duration-300">
 					<i :class="nav.icon" class="text-2xl"></i>
-					<i v-if="routeName === nav.name" class="text-xxs fa fa-circle"></i>
+					<i v-if="routeName === nav.name" class="text-green-200 text-xxs fa fa-circle"></i>
 				</span>
 			</template>
 		</section>
@@ -61,7 +62,7 @@ const navigations = [
 	{
 		name: 'Profile',
 		id: 3,
-		to: 'profile',
+		to: 'Profile',
 		icon: 'fa fa-user'
 	}
 ]

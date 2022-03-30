@@ -1,8 +1,8 @@
 {
-  "name": "Vue Tailwind - A simple starter template",
-  "short_name": "Vue Tailwind",
-  "theme_color": "#FFFFFF",
-  "background_color": "#FFFFFF",
+  "name": "Platform Bank Sampah Digital",
+  "short_name": "Echo Wallet",
+  "theme_color": "#1D1D1D",
+  "background_color": "#121212",
   "display": "standalone",
   "orientation": "portrait",
   "icons": [
