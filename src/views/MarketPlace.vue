@@ -3,7 +3,7 @@
         <HeaderMarket />
         <section class="mt-20 flex flex-wrap justify-between">
             <template v-for="(card, x) in 6" :key="x">
-                <div class="w-36 mb-10">
+                <div class="w-5/12 mb-10">
                     <img src="/product.jpg" class="w-full mb-2 rounded-lg" />
                     <div class="text-sm flex items-center justify-between">
                         <span class="text-gray-300">
