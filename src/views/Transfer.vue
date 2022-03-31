@@ -51,6 +51,7 @@
                 </template>
             </List>
         </section>
+        <HelpCenter />
     </main>
 </template>
 
@@ -58,5 +59,6 @@
 
 import Header from '@/components/Header.vue'
 import List from '@/components/List.vue'
+import HelpCenter from '@/components/HelpCenter.vue'
 
 </script>

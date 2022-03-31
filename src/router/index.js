@@ -36,6 +36,11 @@ const routes = [
 		component: () => import('@/views/Transfer.vue')
 	},
 	{
+		name: 'WithDraw',
+		path: '/withdraw',
+		component: () => import('@/views/WithDraw.vue')
+	},
+	{
 		name: 'Notifications',
 		path: '/notifications',
 		component: () => import('@/views/Notifications.vue')

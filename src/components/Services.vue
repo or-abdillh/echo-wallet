@@ -21,7 +21,7 @@ const services = [
 	},
 	{
 		name: 'Tarik Tunai',
-		to: 'tarik-tunai'
+		to: 'WithDraw'
 	},
 	{
 		name: 'Tukar Poin',
