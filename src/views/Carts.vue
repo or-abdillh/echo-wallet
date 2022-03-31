@@ -5,20 +5,7 @@
 	</section>
 	<section class="mt-20">
 		<template v-for="(cart, x) in carts" :key="x">
-			<List>
-				<template v-slot:start>
-					<div class="flex items-center gap-3 mt-3">
-						<img src="/product.jpg" class="rounded-lg" width="70" />
-						<div class="text-gray-300">
-							<h1 class="font-medium">{{ cart.title }}</h1>
-							<p class="text-sm">Rp.{{ cart.price.toLocaleString('id') }}</p>
-						</div>
-					</div>
-				</template>
-				<template v-slot:end>
-					<IncrementBar :value="cart.amount" />
-				</template>
-			</List>
+			<CardProduct :cart="cart" />
 		</template>		
 	</section>
 	<section class="mt-10 fixed bottom-0 left-0 right-0 bg-primary">
@@ -39,6 +26,7 @@
 <script setup>
 
 import HeaderCart from '@/components/HeaderCart.vue'
+import CardProduct from '@/components/CardProduct.vue'
 import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useHistory } from '@/stores/history'
