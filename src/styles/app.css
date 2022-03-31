@@ -5,6 +5,7 @@
 
 * {
 	font-family: 'Gothic A1', sans-serif;
+	user-select: none;
 }
 
 /* Global Class */

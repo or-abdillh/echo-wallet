@@ -23,17 +23,26 @@ export const useHistory = defineStore('history', {
 			carts: [
 				{
 					title: 'Tas plastik',
-					description: '1 items Rp.45.000,00,-',
+					amount: 1,
+					price: 75000,
 					timestamp: '20/03/2022'
 				},
 				{
 					title: 'Tas plastik',
-					description: '1 items Rp.45.000,00,-',
+					amount: 1,
+					price: 75000,
 					timestamp: '20/03/2022'
 				},
 				{
 					title: 'Tas plastik',
-					description: '1 items Rp.45.000,00,-',
+					amount: 1,
+					price: 75000,
+					timestamp: '20/03/2022'
+				},
+				{
+					title: 'Tas plastik',
+					amount: 1,
+					price: 75000,
 					timestamp: '20/03/2022'
 				}
 			]
