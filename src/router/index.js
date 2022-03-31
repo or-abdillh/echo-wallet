@@ -38,7 +38,7 @@ const routes = [
 	{
 		name: 'WithDraw',
 		path: '/withdraw',
-		component: () => import('@/views/WithDraw.vue')
+		component: () => import('@/views/Withdraw.vue')
 	},
 	{
 		name: 'ChangePoint',
