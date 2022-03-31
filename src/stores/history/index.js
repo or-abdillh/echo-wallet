@@ -35,7 +35,7 @@ export const useHistory = defineStore('history', {
 				},
 				{
 					title: 'Tas plastik',
-					amount: 1,
+					amount: 3,
 					price: 75000,
 					timestamp: '20/03/2022'
 				},
@@ -53,7 +53,7 @@ export const useHistory = defineStore('history', {
 				},
 				{
 					title: 'Tas plastik',
-					amount: 1,
+					amount: 3,
 					price: 75000,
 					timestamp: '20/03/2022'
 				},
@@ -71,7 +71,7 @@ export const useHistory = defineStore('history', {
 				},
 				{
 					title: 'Tas plastik',
-					amount: 1,
+					amount: 2,
 					price: 75000,
 					timestamp: '20/03/2022'
 				},

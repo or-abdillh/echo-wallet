@@ -3,7 +3,7 @@
 	<section class="mt-20 text-gray-300">
 		<HeaderCart />
 	</section>
-	<section class="mt-20">
+	<section class="mt-20 mb-20">
 		<template v-for="(cart, x) in carts" :key="x">
 			<CardProduct :cart="cart" />
 		</template>		
