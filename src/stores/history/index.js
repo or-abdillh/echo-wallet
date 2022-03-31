@@ -44,6 +44,42 @@ export const useHistory = defineStore('history', {
 					amount: 1,
 					price: 75000,
 					timestamp: '20/03/2022'
+				},
+				{
+					title: 'Tas plastik',
+					amount: 1,
+					price: 75000,
+					timestamp: '20/03/2022'
+				},
+				{
+					title: 'Tas plastik',
+					amount: 1,
+					price: 75000,
+					timestamp: '20/03/2022'
+				},
+				{
+					title: 'Tas plastik',
+					amount: 1,
+					price: 75000,
+					timestamp: '20/03/2022'
+				},
+				{
+					title: 'Tas plastik',
+					amount: 1,
+					price: 75000,
+					timestamp: '20/03/2022'
+				},
+				{
+					title: 'Tas plastik',
+					amount: 1,
+					price: 75000,
+					timestamp: '20/03/2022'
+				},
+				{
+					title: 'Tas plastik',
+					amount: 1,
+					price: 75000,
+					timestamp: '20/03/2022'
 				}
 			]
 		}
