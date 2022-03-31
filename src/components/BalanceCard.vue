@@ -1,18 +1,14 @@
 <style scoped>
 
-p {
-	@apply text-lg;
-}
-
 h1 {
 	@apply text-xl font-semibold block my-5;
 }
 </style>
 
 <template>
-	<main class="w-full mx-auto bg-gradient-to-r from-success to-green-500 ring-2 ring-green-400 px-1 py-8 rounded-xl flex items-start justify-evenly">
+	<main class="w-full mx-auto bg-gradient-to-r from-success to-green-500 ring-2 ring-green-400 px-1 py-8 rounded-xl flex gap-4 items-start justify-evenly">
 		<section>
-			<p>Saldo anda</p>
+			<p class="text-lg">Saldo anda</p>
 			<h1>{{ balances.current.toLocaleString() }} IDR</h1>
 			<span class="w-full flex justify-between items-center">
 				<small>{{ balances.trend.value.toLocaleString() }} IDR</small>
@@ -22,9 +18,11 @@ h1 {
 				</span>
 			</span>
 		</section>
-		<section>
-			<p>Point anda</p>
-			<h1>{{ balances.points }}</h1>
+		<section class="grid place-items-center rounded-lg bg-gradient-to-r from-gray-800 to-gray-700 shadow shadow-gray-500 shadow-inner text-gray-300 px-2 py-3">
+			<section class="flex flex-col text-center">
+				<span class="text-sm">Point anda</span>
+				<span>{{ balances.points }}</span>
+			</section>
 		</section>
 	</main>
 </template>
