@@ -25,7 +25,7 @@ const services = [
 	},
 	{
 		name: 'Tukar Poin',
-		to: 'tukar-poin'
+		to: 'ChangePoint'
 	}
 ]
 

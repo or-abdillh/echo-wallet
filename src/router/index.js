@@ -41,6 +41,11 @@ const routes = [
 		component: () => import('@/views/WithDraw.vue')
 	},
 	{
+		name: 'ChangePoint',
+		path: '/change-point',
+		component: () => import('@/views/ChangePoint.vue')
+	},
+	{
 		name: 'Notifications',
 		path: '/notifications',
 		component: () => import('@/views/Notifications.vue')
