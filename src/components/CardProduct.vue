@@ -16,8 +16,9 @@
             </section>
         </template>
         <template v-slot:bottom>
-            <div v-if="expand" class="duration-300 w-full bg-red-500 mt-3 rounded-lg text-center">
-                <i @click="showCard = !showCard" class="text-xs fa fa-trash text-gray-200"></i>
+            <div @click="showCard = !showCard" v-if="expand" class="active:scale-75 duration-300 py-1 text-gray-300 duration-300 w-full bg-red-500 mt-3 rounded-lg text-center">
+                <i class="text-xs fa fa-trash"></i>
+                <span class="ml-1">Delete</span>
             </div>
         </template>
     </List>

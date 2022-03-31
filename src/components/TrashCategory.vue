@@ -4,7 +4,7 @@
 			<List>
 				<template v-slot:start>
 					<section class="flex items-center gap-3 w-8/12">
-						<img :src="item.thumbnail" width="65" />
+						<img :src="item.thumbnail" width="65" class="bg-secondary p-2" />
 						<div>
 							<h1 class="font-semibold">{{ item.name }}</h1>
 							<p class="font-medium text-xs">{{ item.description }}</p>

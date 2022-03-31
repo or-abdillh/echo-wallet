@@ -36,6 +36,8 @@ input[type=text], select {
 				<label>Pilih lokasi penjemputan</label>
 				<select>
 					<option>Unit Bank sampah</option>
+					<option>Unit Handil Bakti</option>
+					<option>Unit Alalak</option>
 				</select>
 			</div>
 			<p class="text-xs text-gray-300">
@@ -52,7 +54,6 @@ input[type=text], select {
 		</section>
 	</main>
 </template>
-
 <script setup>
 
 import Header from '@/components/Header.vue'

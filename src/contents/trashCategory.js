@@ -12,16 +12,16 @@ export default [
   {
     name: 'Kaleng',
     id: 2,
-    thumbnail: '/trash.jpg',
+    thumbnail: '/kaleng.png',
     point: 20,
     description: 'Rp.10.500,00,- /Kg'
   },
   {
-    name: 'Besi',
+    name: 'Botol',
     id: 3,
-    thumbnail: '/trash.jpg',
+    thumbnail: '/botol.png',
     point: 50,
-    description: 'Rp.32.000,00,- /Kg'
+    description: 'Rp.12.000,00,- /Kg'
   },
   {
     name: 'Plastik',

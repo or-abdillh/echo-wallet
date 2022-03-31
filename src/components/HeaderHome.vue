@@ -7,7 +7,7 @@
 				</span>
 				<div class="text-gray-300">
 					<p class="font-semibold text-xl">{{ fullname }}</p>
-					<small class="font-medium">Hay, selamat pagi</small>
+					<small class="font-medium text-sm">Hay, selamat pagi</small>
 				</div>
 			</div>
 		</template>
@@ -19,7 +19,12 @@
 						class="bg-red-500 text-gray-300 grid place-items-center absolute left-1 -top-3 text-xs rounded-full">{{ amountNotif.length}}</span>
 					<i class="fa fa-bell"></i>
 				</span>
-				<i class="fa fa-ellipsis-h"></i>
+				<i @click="showFloatingBtn = !showFloatingBtn" class="relative fa fa-ellipsis-h">
+					<div v-if="showFloatingBtn" class="absolute right-0 top-6 text-base font-medium bg-secondary flex flex-col gap-2 px-2 py-1 rounded">
+						<span>Logout</span>
+						<span>Refresh</span>
+					</div>
+				</i>
 			</div>
 		</template>
 	</HeaderBar>
@@ -27,12 +32,13 @@
 
 <script setup>
 
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import HeaderBar from '@/components/HeaderBar.vue'
 import { useUser } from '@/stores/user'
 import { useNotifications} from '@/stores/notifications'
 import { useRouter } from 'vue-router'
 
+const showFloatingBtn = ref(false)
 const user = useUser()
 const router = useRouter()
 const notifications = useNotifications()

@@ -13,7 +13,7 @@ img {
       <img src="/banner-2.jpg" alt="Sample 2">
     </SplideSlide>
     <SplideSlide>
-      <img src="/banner-1.jpg" alt="Sample 1">
+      <img src="/banner-3.jpg" alt="Sample 1">
     </SplideSlide>
     <SplideSlide>
       <img src="/banner-2.jpg" alt="Sample 2">

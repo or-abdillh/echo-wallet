@@ -6,18 +6,23 @@ export const useHistory = defineStore('history', {
 			deposit: [
 				{
 					title: 'Kardus',
-					description: '3kg Rp128.000,00,-',
+					description: '3kg Rp128.000-',
 					thumbnail: '/kardus.png'
 				},
 				{
 					title: 'Plastik',
-					description: '1kg Rp45.000,00,-',
+					description: '1kg Rp45.000-',
 					thumbnail: '/plastik.png'
 				},
 				{
-					title: 'Kardus',
-					description: '3kg Rp128.000,00,-',
-					thumbnail: '/kardus.png'
+					title: 'Botol',
+					description: '3kg Rp128.000-',
+					thumbnail: '/botol.png'
+				},
+				{
+					title: 'Kaleng',
+					description: '1kg RP45.000-',
+					thumbnail: '/kaleng.png'
 				}
 			],
 			carts: [
