@@ -18,7 +18,7 @@ h1 {
 				</span>
 			</span>
 		</section>
-		<section class="grid place-items-center rounded-lg bg-gradient-to-r from-gray-800 to-gray-700 shadow shadow-gray-500 shadow-inner text-gray-300 px-2 py-3">
+		<section class="grid place-items-center rounded-lg bg-gradient-to-r from-green-800 to-green-700 shadow shadow-gray-800 shadow-inner text-gray-300 px-2 py-3">
 			<section class="flex flex-col text-center">
 				<span class="text-sm">Point anda</span>
 				<span>{{ balances.points }}</span>
