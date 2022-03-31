@@ -17,7 +17,7 @@ const services = [
 	},
 	{
 		name: 'Kirim Uang',
-		to: 'kirim-uang'
+		to: 'Transfer'
 	},
 	{
 		name: 'Tarik Tunai',

@@ -1,7 +1,7 @@
 <template>
 	
 	<section class="mt-20 text-gray-300">
-		<HeaderCart />
+		<Header title="Keranjang" sub="Lihat semua keranjang disini" />
 	</section>
 	<section class="mt-20 mb-20">
 		<template v-for="(cart, x) in carts" :key="x">
@@ -25,7 +25,7 @@
 
 <script setup>
 
-import HeaderCart from '@/components/HeaderCart.vue'
+import Header from '@/components/Header.vue'
 import CardProduct from '@/components/CardProduct.vue'
 import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'

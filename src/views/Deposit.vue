@@ -11,7 +11,7 @@ input[type=text], select {
 </style>
 <template>
 	<main>
-		<HeaderDeposit />
+		<Header title="Setor" sub="Setor sampah anda disini" />
 		<section class="text-gray-300 mt-20">
 			<h1 class="text-lg font-medium">Formulir</h1>
 			<p class="text-xs">
@@ -55,7 +55,7 @@ input[type=text], select {
 
 <script setup>
 
-import HeaderDeposit from '@/components/HeaderDeposit.vue'
+import Header from '@/components/Header.vue'
 import TrashCategory from '@/components/TrashCategory.vue'
 
 </script>

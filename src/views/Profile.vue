@@ -1,6 +1,6 @@
 <template>
 	<main>
-		<HeaderProfile />
+		<Header :useArrow="false" title="Profil" sub="Atur akun dan data diri anda" />
 		<section class="mt-20">
 			<div class="w-10/12 mx-auto flex flex-col items-center text-gray-300">
 				<img class="rounded-full border-2 border-gray-500" width="150" src="/avatar.jpg" />
@@ -37,7 +37,7 @@
 <script setup>
 
 import List from '@/components/List.vue'
-import HeaderProfile from '@/components/HeaderProfile.vue'
+import Header from '@/components/Header.vue'
 import { useUser } from '@/stores/user'
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
