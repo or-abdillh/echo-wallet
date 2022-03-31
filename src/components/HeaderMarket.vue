@@ -9,10 +9,10 @@
             </section>
         </template>
         <template v-slot:end>
-            <section>
+            <section @click="router.push({ name: 'Carts' })">
                 <span class="relative">
                     <span style="width:25px; height:25px" 
-                        class="text-xxs bg-red-500 text-gray-300 grid place-items-center absolute left-2 -top-4 text-xs rounded-full"><p>{{ carts.length }}</p></span>
+                    class="text-xxs bg-red-500 text-gray-300 grid place-items-center absolute left-2 -top-4 text-xs rounded-full"><p>{{ carts.length }}</p></span>
                     <i class="text-lg fa fa-shopping-cart"></i>
                 </span>
             </section>
@@ -32,9 +32,9 @@
 <script setup>
 
 import { computed, ref } from 'vue'
-import HeaderBar from '@/components/HeaderBar.vue'
-import { useHistory } from '@/stores/history'
 import { useRouter } from 'vue-router'
+import { useHistory } from '@/stores/history'
+import HeaderBar from '@/components/HeaderBar.vue'
 import category from '@/contents/category.js'
 
 const router = useRouter()
